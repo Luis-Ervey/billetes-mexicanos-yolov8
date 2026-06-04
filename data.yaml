@@ -1,0 +1,19 @@
+# Configuración del dataset YOLOv8 — TT2026-2_IA16
+# Ajusta las rutas a donde quede tu dataset exportado de Roboflow.
+
+path: ./dataset      # carpeta raíz del dataset
+train: images/train  # imágenes de entrenamiento (relativo a 'path')
+val: images/val      # imágenes de validación
+test: images/test    # imágenes de prueba
+
+# Número de clases
+nc: 6
+
+# Nombres de las clases (el orden define el ID: 0..5)
+names:
+  0: billete_20
+  1: billete_50
+  2: billete_100
+  3: billete_200
+  4: billete_500
+  5: billete_1000
